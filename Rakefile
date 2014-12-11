@@ -19,26 +19,24 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{TODO: one-line summary of your gem}
   gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "jtestf+git@gmail.com"
-  gem.authors = ["Jack"]
+  gem.email = "jack.yinkit.choi@gmail.com"
+  gem.authors = ["Jack Choi"]
   # dependencies defined in Gemfile
 end
-Jeweler::RubygemsDotOrgTasks.new
 
-require 'rake/testtask'
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-end
+# Don't publish yet
+# Jeweler::RubygemsDotOrgTasks.new
+
+require 'rspec/core/rake_task'
+RSpec::Core::RakeTask.new(:spec)
 
 desc "Code coverage detail"
 task :simplecov do
   ENV['COVERAGE'] = "true"
-  Rake::Task['test'].execute
+  Rake::Task['spec'].execute
 end
 
-task :default => :test
+task :default => :spec
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
