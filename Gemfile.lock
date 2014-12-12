@@ -69,6 +69,7 @@ GEM
       simplecov-html (~> 0.8.0)
     simplecov-html (0.8.0)
     thread_safe (0.3.4)
+    vcr (2.9.3)
     webmock (1.20.4)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -82,4 +83,5 @@ DEPENDENCIES
   ox (~> 2.1.4)
   rspec (~> 3.1.0)
   simplecov
+  vcr (~> 2.9.3)
   webmock (~> 1.20.4)
