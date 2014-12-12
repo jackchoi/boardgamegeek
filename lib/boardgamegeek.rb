@@ -1,3 +1,6 @@
+require "boardgamegeek/parser"
+require "boardgamegeek/request"
+
 module BoardGameGeek
-  autoload :Parser,               "boardgamegeek/parser"
+  BASE_URL = "http://www.boardgamegeek.com/xmlapi2"
 end
