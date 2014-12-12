@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe "::parse" do
-  let(:parser) { BoardGameGeek::Parser }
+  let(:parser) { BoardGameGeek.parser }
 
   context "when content is invalid" do
     it "returns an empty object" do
