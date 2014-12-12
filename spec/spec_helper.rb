@@ -1,4 +1,8 @@
+require 'boardgamegeek'
+require 'rspec'
 
 RSpec.configure do |config|
-  puts "hi"
+  config.expect_with :rspec do |c|
+    c.syntax = :expect
+  end
 end
