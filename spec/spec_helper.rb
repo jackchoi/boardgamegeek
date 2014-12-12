@@ -1,6 +1,7 @@
 require 'boardgamegeek'
 require 'rspec'
 require 'webmock/rspec'
+require 'vcr'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
@@ -10,4 +11,7 @@ RSpec.configure do |config|
   config.include WebMock::API
 end
 
-WebMock.disable_net_connect!
+VCR.configure do |config|
+  config.cassette_library_dir = "fixtures/vcr_cassettes"
+  config.hook_into :webmock
+end
