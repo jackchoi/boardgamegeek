@@ -26,13 +26,14 @@ describe "::parse" do
     end
 
     it "returns valid child nodes" do
-      content = %q|
+      content = <<-XML
         <items>
           <item type="test" id="4">
             <name value="test_name"/>
             <desc value="test_description"/>
           </item>
-        </items>|
+        </items>
+        XML
       output = parser.parse(content)
 
       expect(output[:@children].count).to eq(1)
@@ -40,18 +41,29 @@ describe "::parse" do
     end
 
     it "parses text nodes properly" do
-      content = %q|
+      content = <<-XML
         <items>
           <item type="node_type" id="1">
             <thumbnail>//www.example.com/thumb.jpg</thumbnail>
             <image>//www.example.com/image.jpg</image>
           </item>
-        </items>|
+        </items>
+        XML
       output = parser.parse(content)
 
       thumbnail_node = output[:@children].first[:@children].first
 
       expect(thumbnail_node[:@children].first).to eq("//www.example.com/thumb.jpg")
+    end
+
+    it "does not return xml declaration header" do
+      content = <<-XML
+        <?xml version="1.0" encoding="utf-8"?>
+        <items root="true"/>
+        XML
+      output = parser.parse(content)
+
+      expect(output[:root]).to eq("true")
     end
   end
 end
