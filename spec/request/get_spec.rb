@@ -11,7 +11,7 @@ describe "::get" do
   end
 
   it "returns a successful code" do
-    expect(response[:code]).to be(200)
+    expect(response[:status_code]).to be(200)
   end
 
   it "returns the proper body" do

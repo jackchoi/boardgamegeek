@@ -9,11 +9,11 @@ module BoardGameGeek
     end
 
     private
-    
+
     def convert_response_to_hash(response)
       {
-        :code => response.code.nil? ? nil : response.code.to_i,
-        :message => response.message,
+        :status_code => response.code.nil? ? nil : response.code.to_i,
+        :status_message => response.message,
         :body => response.body
       }
     end
