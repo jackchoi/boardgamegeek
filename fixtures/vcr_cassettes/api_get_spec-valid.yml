@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.boardgamegeek.com/xmlapi2/search?exact=1&query=King%20of%20Tokyo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.boardgamegeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Sat, 13 Dec 2014 18:08:13 GMT
+      Content-Type:
+      - text/xml; charset="UTF-8"
+      Content-Length:
+      - '200'
+      X-Powered-By:
+      - PHP/5.5.18
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding,User-Agent
+      Set-Cookie:
+      - geekproxy=; Expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?><items total=\"1\" termsofuse=\"http://boardgamegeek.com/xmlapi/termsofuse\">\t\t\t<item
+        type=\"boardgame\" id=\"70323\">\n\t\t\t<name type=\"primary\" value=\"King
+        of Tokyo\"/>\t\t\t\n\t\t\t\t\t\t\t<yearpublished value=\"2011\" />\n\t\t\t\t\t</item>\n\t\t\t\t\t\t\t</items>"
+    http_version: 
+  recorded_at: Sat, 13 Dec 2014 18:08:13 GMT
+recorded_with: VCR 2.9.3
