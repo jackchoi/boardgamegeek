@@ -1,24 +1,27 @@
 require "boardgamegeek/errors"
+require "boardgamegeek/configuration"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
 require "boardgamegeek/api"
 require "boardgamegeek/resource"
 
 module BoardGameGeek
-  BASE_URL = "http://www.boardgamegeek.com/xmlapi2"
-
-  def self.request_handler
-    @request ||= Request.new
+  def self.configuration
+    @configuration ||= Configuration.new
   end
 
-  def self.parser
-    @parser ||= Parser.new
+  def self.reset
+    @configuration = Configuration.new
+  end
+
+  def self.configure
+    yield configuration
   end
 
   def self.api_handler
-    @api_handler = API.new :base_url => BASE_URL,
-                           :request_handler => request_handler,
-                           :parser => parser
+    @api_handler = API.new :base_url => configuration.base_url,
+                           :request_handler => configuration.request_handler,
+                           :parser => configuration.parser
   end
 
   autoload :Thing, "boardgamegeek/resource/thing"

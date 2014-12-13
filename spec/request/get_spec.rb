@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe "::get" do
-  let!(:request) { BoardGameGeek.request_handler }
+  let!(:request) { BoardGameGeek.configuration.request_handler }
   let(:uri) { URI("http://www.example.com/") }
 
   subject(:response) do
