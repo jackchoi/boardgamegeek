@@ -3,10 +3,17 @@ require "spec_helper"
 describe "::parse" do
   let(:parser) { BoardGameGeek.parser }
 
-  context "when content is invalid" do
+  context "when content is empty" do
     it "returns an empty object" do
       content = ""
       expect(parser.parse(content)).to be_empty
+    end
+  end
+
+  context "when content is malformed" do
+    it "raises ParseError" do
+      content = "<xml"
+      expect{ parser.parse(content) }.to raise_error(BoardGameGeek::ParseError)
     end
   end
 
@@ -30,6 +37,21 @@ describe "::parse" do
 
       expect(output[:@children].count).to eq(1)
       expect(output[:@children].first.keys).to include(:@name, :@children, :type, :id)
+    end
+
+    it "parses text nodes properly" do
+      content = %q|
+        <items>
+          <item type="node_type" id="1">
+            <thumbnail>//www.example.com/thumb.jpg</thumbnail>
+            <image>//www.example.com/image.jpg</image>
+          </item>
+        </items>|
+      output = parser.parse(content)
+
+      thumbnail_node = output[:@children].first[:@children].first
+
+      expect(thumbnail_node[:@children].first).to eq("//www.example.com/thumb.jpg")
     end
   end
 end

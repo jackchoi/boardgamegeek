@@ -1,3 +1,4 @@
+require "boardgamegeek/errors"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
 
@@ -14,7 +15,7 @@ module BoardGameGeek
 
   def self.get(uri, params = {})
     raw_data = request.get(uri, params)
-    data = parser.parse(raw_data)
+    data = parser.parse(raw_data[:body])
     yield data if block_given?
     data
   end
