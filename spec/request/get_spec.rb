@@ -1,12 +1,11 @@
 require "spec_helper"
 
 describe "::get" do
-
   let!(:request) { BoardGameGeek.request }
 
   subject(:response) do
     WebMock.stub_request(:any, /.*boardgamegeek.*/).to_return(:status => 200, :body => "test")
-    
+
     request.get("test_uri", {:foo => "bar"})
   end
 
