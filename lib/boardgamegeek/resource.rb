@@ -1,7 +1,9 @@
 module BoardGameGeek
   module Resource
     def request(*args)
-      # TODO
+      BoardGameGeek.get(resource_name, *args) do |data|
+        # TODO: handle stuff
+      end
     end
 
     def resource_name

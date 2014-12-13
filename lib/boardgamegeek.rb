@@ -1,6 +1,7 @@
 require "boardgamegeek/errors"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
+require "boardgamegeek/resource"
 
 module BoardGameGeek
   BASE_URL = "http://www.boardgamegeek.com/xmlapi2"
@@ -19,4 +20,6 @@ module BoardGameGeek
     yield data if block_given?
     data
   end
+
+  autoload :Thing, "boardgamegeek/resource/thing"
 end
