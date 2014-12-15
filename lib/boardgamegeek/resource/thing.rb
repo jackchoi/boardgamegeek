@@ -1,5 +1,5 @@
 module BoardGameGeek
   class Thing
-    extend BoardGameGeek::Resource
+    extend Resource
   end
 end

@@ -3,7 +3,6 @@ require "boardgamegeek/configuration"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
 require "boardgamegeek/api"
-require "boardgamegeek/resource"
 
 module BoardGameGeek
   def self.configuration
@@ -19,10 +18,11 @@ module BoardGameGeek
   end
 
   def self.api_handler
-    @api_handler = API.new :base_url => configuration.base_url,
-                           :request_handler => configuration.request_handler,
-                           :parser => configuration.parser
+    @api_handler ||= API.new :base_url => configuration.base_url,
+                             :request_handler => configuration.request_handler,
+                             :parser => configuration.parser
   end
 
+  autoload :Resource, "boardgamegeek/resource"
   autoload :Thing, "boardgamegeek/resource/thing"
 end
