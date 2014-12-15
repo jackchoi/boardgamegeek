@@ -15,11 +15,15 @@ module BoardGameGeek
     def api_handler
       @api_handler ||= BoardGameGeek.api_handler
     end
-    
+
     private
-    
+
     def default_resource_name
-      self.class.name.split('::').last.downcase
+      new_name = case self
+                 when Module, Class then self.name
+                 else self.class.name
+                 end
+      new_name.split('::').last.downcase
     end
   end
 end
