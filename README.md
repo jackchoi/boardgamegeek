@@ -1,6 +1,6 @@
 = boardgamegeek
 
-Description goes here.
+Under development
 
 == Contributing to boardgamegeek
  
