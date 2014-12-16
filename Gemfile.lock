@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.3.6)
     builder (3.2.2)
+    codeclimate-test-reporter (0.4.3)
+      simplecov (>= 0.7.1, < 1.0.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     descendants_tracker (0.0.4)
@@ -79,6 +81,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.0)
+  codeclimate-test-reporter
   jeweler (~> 2.0.1)
   ox (~> 2.1.4)
   rake (~> 10.4.2)

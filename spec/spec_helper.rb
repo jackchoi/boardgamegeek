@@ -1,3 +1,13 @@
+if ENV["CODECLIMATE_REPO_TOKEN"]
+  require "codeclimate-test-reporter"
+  CodeClimate::TestReporter.start
+end
+
+if ENV['COVERAGE'] == "true"
+  require "simplecov"
+  SimpleCov.start
+end
+
 require 'boardgamegeek'
 require 'rspec'
 require 'webmock/rspec'
