@@ -1,4 +1,5 @@
 require "boardgamegeek/errors"
+require "boardgamegeek/result"
 require "boardgamegeek/configuration"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
