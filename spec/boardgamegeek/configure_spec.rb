@@ -7,16 +7,12 @@ describe BoardGameGeek do
   class FakeRequestHandler
   end
 
-  class FakeMarshaller
-  end
-
   describe "#configure" do
     before :all do
       BoardGameGeek.configure do |config|
         config.base_url = "http://www.example.com"
         config.parser = FakeParser.new
         config.request_handler = FakeRequestHandler.new
-        config.marshaller = FakeMarshaller.new
       end
     end
 
@@ -30,10 +26,6 @@ describe BoardGameGeek do
 
     it "returns the proper Request object" do
       expect(BoardGameGeek.configuration.request_handler).to be_a(FakeRequestHandler)
-    end
-
-    it "returns the proper Marshaller object" do
-      expect(BoardGameGeek.configuration.marshaller).to be_a(FakeMarshaller)
     end
   end
 

@@ -55,16 +55,5 @@ module BoardGameGeek
         let(:default_setting) { Request }
       end
     end
-
-    describe "#marshaller" do
-      class FakeMarshaller
-      end
-
-      it_behaves_like "an object configuration setting" do
-        let(:setting_name) { "marshaller" }
-        let(:new_setting) { FakeMarshaller }
-        let(:default_setting) { Marshaller }
-      end
-    end
   end
 end

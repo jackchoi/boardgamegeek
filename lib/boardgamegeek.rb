@@ -23,9 +23,11 @@ module BoardGameGeek
     @api_handler ||= API.new :base_url => configuration.base_url,
                              :request_handler => configuration.request_handler,
                              :parser => configuration.parser,
-                             :marshaller => configuration.marshaller
+                             :marshaller => @marshaller
   end
 
+  @marshaller = Marshaller.new
+
   autoload :Resource, "boardgamegeek/resource"
-  autoload :Thing, "boardgamegeek/resource/thing"
+  autoload :Thing,    "boardgamegeek/resource/thing"
 end
