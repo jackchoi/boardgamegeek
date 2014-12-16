@@ -1,45 +1,69 @@
 require "spec_helper"
 
+shared_examples "a string configuration setting" do
+  it "can set a setting to a new value" do
+    config.send "#{setting_name}=", new_setting
+    expect(config.send(setting_name)).to eq(new_setting)
+  end
+
+  it "defaults the setting to a proper value" do
+    expect(config.send(setting_name)).to eq(default_setting)
+  end
+end
+
+shared_examples "an object configuration setting" do
+  it "can set a setting to a new object" do
+    config.send "#{setting_name}=", new_setting
+    expect(config.send(setting_name)).to be(new_setting)
+  end
+
+  it "defaults the setting to the proper class" do
+    expect(config.send(setting_name)).to be_a(default_setting)
+  end
+end
+
 module BoardGameGeek
   describe Configuration do
     let(:config) { Configuration.new }
 
     describe "#base_url" do
-      it "can set a base_url" do
-        config.base_url = "http://www.example.com"
-        expect(config.base_url).to eq("http://www.example.com")
-      end
-
-      it %q(defaults base_url to "http://www.boardgamegeek.com/xmlapi2") do
-        expect(config.base_url).to eq("http://www.boardgamegeek.com/xmlapi2")
+      it_behaves_like "a string configuration setting" do
+        let(:setting_name) { "base_url" }
+        let(:new_setting) { "http://www.example.com" }
+        let(:default_setting) { "http://www.boardgamegeek.com/xmlapi2" }
       end
     end
 
     describe "#parser" do
-      it "can set a parser to another object" do
-        class FakeParser
-        end
-        fake_parser = FakeParser.new
-        config.parser = fake_parser
-        expect(config.parser).to be(fake_parser)
+      class FakeParser
       end
 
-      it "defaults parser to an instance of BoardGameGeek::Parser" do
-        expect(config.parser).to be_a(BoardGameGeek::Parser)
+      it_behaves_like "an object configuration setting" do
+        let(:setting_name) { "parser" }
+        let(:new_setting) { FakeParser }
+        let(:default_setting) { Parser }
       end
     end
 
     describe "#request_handler" do
-      it "can set a requerst_handler to another object" do
-        class FakeRequestHandler
-        end
-        fake_request_handler = FakeRequestHandler.new
-        config.request_handler = fake_request_handler
-        expect(config.request_handler).to be(fake_request_handler)
+      class FakeRequestHandler
       end
 
-      it "defaults request handler to an instance of BoardGameGeek::Request" do
-        expect(config.request_handler).to be_a(BoardGameGeek::Request)
+      it_behaves_like "an object configuration setting" do
+        let(:setting_name) { "request_handler" }
+        let(:new_setting) { FakeRequestHandler }
+        let(:default_setting) { Request }
+      end
+    end
+
+    describe "#marshaller" do
+      class FakeMarshaller
+      end
+
+      it_behaves_like "an object configuration setting" do
+        let(:setting_name) { "marshaller" }
+        let(:new_setting) { FakeMarshaller }
+        let(:default_setting) { Marshaller }
       end
     end
   end
