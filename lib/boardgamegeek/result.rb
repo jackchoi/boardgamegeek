@@ -1,19 +1,35 @@
+require 'forwardable'
+
 module BoardGameGeek
   class Result
     include Enumerable
+    extend ::Forwardable
+
+    def_delegators :@items, :length, :each
     
     def initialize(items = [])
       @items = items
+      @index = build_index
+
+      self.freeze
+    end
+    
+    def find(id)
+      @index[id] ? @items[@index[id]] : nil
     end
 
-    def each(&blk)
-      @items.each do |item|
-        yield item
+    private
+
+    def build_index
+      index = {}
+
+      @items.each_with_index do |item, idx|
+        if item.respond_to? :id
+          index[item.id] = idx
+        end
       end
-    end
 
-    def method_missing(meth)
-      @items.send meth
+      index
     end
   end
 end
