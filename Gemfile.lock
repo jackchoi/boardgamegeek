@@ -81,6 +81,7 @@ DEPENDENCIES
   bundler (~> 1.0)
   jeweler (~> 2.0.1)
   ox (~> 2.1.4)
+  rake (~> 10.4.2)
   rspec (~> 3.1.0)
   simplecov
   vcr (~> 2.9.3)

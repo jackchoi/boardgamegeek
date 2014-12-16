@@ -13,3 +13,7 @@ group :development do
   gem "webmock", "~> 1.20.4"
   gem "vcr", "~> 2.9.3"
 end
+
+group :test do
+  gem "rake", "~> 10.4.2"
+end
