@@ -1,5 +1,60 @@
 module BoardGameGeek
   class Marshaller
-    
+    def initialize
+      @item_type_classname_map = {}
+      @default_item_lookup = nil
+      @default_item_classname = nil
+    end
+
+    def unmarshall(content)
+      items = unmarshall_items(content[:@children])
+
+      Result.new items
+    end
+
+    def define_default_association(classname = nil, &blk)
+      if blk
+        @default_item_lookup = blk
+      end
+
+      if classname
+        @default_item_classname = classname
+      end
+    end
+
+    def define_item_association(item_type, classname)
+      @item_type_classname_map[item_type.to_sym] = classname
+    end
+
+    def get_association(item_type)
+      key = item_type.to_sym
+
+      if @item_type_classname_map[key].nil?
+        unless @default_item_lookup.nil?
+          new_class = @default_item_lookup.call(key)
+        end
+
+        if new_class.nil?
+          new_class = @default_item_classname
+        end
+
+        @item_type_classname_map[key] = new_class
+      end
+
+      @item_type_classname_map[key]
+    end
+
+    private
+
+    def unmarshall_items(items)
+      items.inject([]) do |items, item|
+        items.push unmarshall_item(item)
+      end
+    end
+
+    def unmarshall_item(item)
+      class_name = get_association(item[:type])
+      class_name.new(item)
+    end
   end
 end

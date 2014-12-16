@@ -1,5 +1,6 @@
 require "boardgamegeek/errors"
 require "boardgamegeek/result"
+require "boardgamegeek/result_item"
 require "boardgamegeek/configuration"
 require "boardgamegeek/parser"
 require "boardgamegeek/request"
@@ -27,6 +28,9 @@ module BoardGameGeek
   end
 
   @marshaller = Marshaller.new
+  @marshaller.define_default_association Result::ResultItem do |item_type|
+    # TODO: define associations between item_type and BoardGameGeek::Result::ResultItem's
+  end
 
   autoload :Resource, "boardgamegeek/resource"
   autoload :Thing,    "boardgamegeek/resource/thing"
