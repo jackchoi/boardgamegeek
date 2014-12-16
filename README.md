@@ -1,4 +1,4 @@
-boardgamegeek
+boardgamegeek [![Build Status](https://travis-ci.org/jackchoi/boardgamegeek.svg?branch=master)](https://travis-ci.org/jackchoi/boardgamegeek) [![Code Climate](https://codeclimate.com/github/jackchoi/boardgamegeek/badges/gpa.svg)](https://codeclimate.com/github/jackchoi/boardgamegeek) [![Test Coverage](https://codeclimate.com/github/jackchoi/boardgamegeek/badges/coverage.svg)](https://codeclimate.com/github/jackchoi/boardgamegeek)
 =============
 
 Project status
