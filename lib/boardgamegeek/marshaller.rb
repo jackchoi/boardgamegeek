@@ -1,15 +1,16 @@
 module BoardGameGeek
   class Marshaller
-    def initialize
+    def initialize(result_collection_class = Array)
       @item_type_classname_map = {}
       @default_item_lookup = nil
       @default_item_classname = nil
+      @result_collection_class = result_collection_class
     end
 
     def unmarshall(content)
       items = unmarshall_items(content[:@children])
 
-      Result.new items
+      @result_collection_class.new items
     end
 
     def define_default_association(classname = nil, &blk)

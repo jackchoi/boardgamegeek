@@ -1,5 +1,5 @@
 module BoardGameGeek
-  class Result
+  module Result
     class ResultItem
       def intialize(item_data)
         @item_data = item_data

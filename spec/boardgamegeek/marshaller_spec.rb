@@ -77,7 +77,7 @@ module BoardGameGeek
           BoardGameGeek.api_handler.get(:thing, :id => [12493, 95802, 70722, 162996])
         end
 
-        marshaller = Marshaller.new
+        marshaller = Marshaller.new(Result::ResultSet)
         marshaller.define_default_association do |item_type|
           get_class_name item_type
         end
@@ -87,7 +87,7 @@ module BoardGameGeek
 
       subject { @unmarshalled_content }
 
-      it { is_expected.to be_a(Result) }
+      it { is_expected.to be_a(Result::ResultSet) }
 
       it "returns a Result with the right number of items" do
         expect(@unmarshalled_content.length).to eq(@content[:@children].length)

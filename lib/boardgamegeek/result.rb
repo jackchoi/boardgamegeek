@@ -1,35 +1,7 @@
-require 'forwardable'
+require_relative "result/result_set"
+require_relative "result/result_item"
 
 module BoardGameGeek
-  class Result
-    include Enumerable
-    extend ::Forwardable
-
-    def_delegators :@items, :length, :each
-    
-    def initialize(items = [])
-      @items = items
-      @index = build_index
-
-      self.freeze
-    end
-    
-    def find(id)
-      @index[id] ? @items[@index[id]] : nil
-    end
-
-    private
-
-    def build_index
-      index = {}
-
-      @items.each_with_index do |item, idx|
-        if item.respond_to? :id
-          index[item.id] = idx
-        end
-      end
-
-      index
-    end
+  module Result
   end
 end
