@@ -12,7 +12,7 @@ module BoardGameGeek
     end
 
     def params_to_query_string(params)
-      params.map{ |key, val| param_to_query_string_pair(key, val) }.join('&')
+      params.map{ |key, val| param_to_query_string_pair(key, val) }.sort.join('&')
     end
 
     def param_to_query_string_pair(key, val)

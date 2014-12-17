@@ -7,7 +7,9 @@ module BoardGameGeek
         URIHelper.new("http://www.example.com")
                  .resource_to_uri("sample_resource",
                                   :foo => "bar",
-                                  :ids => [1, 2, 3])
+                                  :ids => [1, 2, 3],
+                                  :is_true => true,
+                                  :is_false => false)
       end
 
       it "returns a uri object" do
@@ -23,7 +25,7 @@ module BoardGameGeek
       end
 
       it "sets the right query string" do
-        expect(uri_response.query).to eq("foo=bar&ids=1,2,3")
+        expect(uri_response.query).to eq("foo=bar&ids=1,2,3&is_false=0&is_true=1")
       end
     end
   end
