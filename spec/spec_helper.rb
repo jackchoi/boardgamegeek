@@ -10,6 +10,7 @@ end
 
 require 'boardgamegeek'
 require 'rspec'
+require 'rspec-its'
 require 'webmock/rspec'
 require 'vcr'
 

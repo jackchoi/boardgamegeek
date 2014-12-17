@@ -10,6 +10,7 @@ group :development do
 
   gem "simplecov", ">= 0"
   gem "rspec", "~> 3.1.0"
+  gem "rspec-its", "~> 1.1.0"
   gem "webmock", "~> 1.20.4"
   gem "vcr", "~> 2.9.3"
 end
