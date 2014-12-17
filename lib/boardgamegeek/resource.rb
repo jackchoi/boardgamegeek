@@ -19,11 +19,7 @@ module BoardGameGeek
     private
 
     def default_resource_name
-      new_name = case self
-                 when Module, Class then self.name
-                 else self.class.name
-                 end
-      new_name.split('::').last.downcase
+      self.name.split('::').last.downcase
     end
   end
 end
