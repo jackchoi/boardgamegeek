@@ -7,7 +7,7 @@ describe BoardGameGeek do
   class FakeRequestHandler
   end
 
-  describe "#configure" do
+  describe "::configure" do
     before :all do
       BoardGameGeek.configure do |config|
         config.base_url = "http://www.example.com"

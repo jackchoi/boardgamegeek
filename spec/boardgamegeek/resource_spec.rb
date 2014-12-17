@@ -2,7 +2,6 @@ require "spec_helper"
 
 module BoardGameGeek
   describe Resource do
-
     let(:resource_class) do
       if BoardGameGeek.const_defined? :ResourceImpl
         BoardGameGeek.send(:remove_const, :ResourceImpl)
@@ -15,13 +14,13 @@ module BoardGameGeek
       ResourceImpl
     end
 
-    describe "#resource_name" do
+    describe "::resource_name" do
       it "defaults to the lowercase of the classname when extended" do
         expect(resource_class.resource_name).to eq("resourceimpl")
       end
     end
 
-    describe "#resource_name=" do
+    describe "::resource_name=" do
       it "overrides the default resource name" do
         resource_name = "overriddenresource"
         resource_class.resource_name = resource_name
@@ -29,7 +28,7 @@ module BoardGameGeek
       end
     end
 
-    describe "#request" do
+    describe "::request" do
       before :each do
         response_body = <<-EOL
           <items><item id="1"></item></items>
