@@ -73,11 +73,14 @@ module BoardGameGeek
       end
 
       before :all do
+        class SomeCollection < Array
+        end
+
         @content = VCR.use_cassette "unmarshall_spec" do
           BoardGameGeek.api_handler.get(:thing, :id => [12493, 95802, 70722, 162996])
         end
 
-        marshaller = Marshaller.new(Result::ResultSet)
+        marshaller = Marshaller.new(SomeCollection)
         marshaller.define_default_association do |item_type|
           get_class_name item_type
         end
@@ -87,7 +90,7 @@ module BoardGameGeek
 
       subject { @unmarshalled_content }
 
-      it { is_expected.to be_a(Result::ResultSet) }
+      it { is_expected.to be_a(SomeCollection) }
 
       it "returns a Result with the right number of items" do
         expect(@unmarshalled_content.length).to eq(@content[:@children].length)
