@@ -1,0 +1,175 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.boardgamegeek.com/xmlapi2/thing?id=12493
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.boardgamegeek.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Wed, 17 Dec 2014 20:32:58 GMT
+      Content-Type:
+      - text/xml; charset="UTF-8"
+      Content-Length:
+      - '2293'
+      X-Powered-By:
+      - PHP/5.5.18
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Pragma:
+      - no-cache
+      Vary:
+      - Accept-Encoding,User-Agent
+      Set-Cookie:
+      - geekproxy=; Expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?><items termsofuse=\"http://boardgamegeek.com/xmlapi/termsofuse\"><item
+        type=\"boardgame\" id=\"12493\">\n         <thumbnail>//cf.geekdo-images.com/images/pic50404_t.jpg</thumbnail>\n
+        \     <image>//cf.geekdo-images.com/images/pic50404.jpg</image>\n                                     \t\t\t\t\n\t\t\t\t<name
+        type=\"primary\" sortindex=\"1\" value=\"Twilight Imperium (Third Edition)\"
+        />\n\t\t\t\n\t\t\t\t\t\t                           \n\t\t\t\t\t\t               \t\t\t\t\t\t\t\t\t\t\t\t\t<description>Twilight
+        Imperium Third Edition is an epic empire-building game of interstellar conflict,
+        trade, and struggle for power. Players take the roles of ancient galactic
+        civilizations, each seeking to seize the imperial throne via warfare, diplomacy,
+        and technological progression. With geomorphic board tiles, exquisite plastic
+        miniatures, hundreds of cards, and introducing a rich set of strategic dimensions
+        that allows each player to refocus their game-plan, the original designer
+        Christian T. Petersen has seamlessly incorporated the better qualities of
+        other recently popular games to improve on the game-play of the original TI,
+        making it at once perfectly well-rounded and pleasantly familiar to experienced
+        gamers.&amp;#10;&amp;#10;TI3 is played by at least three players who belong
+        to ten possible alien races, each with their own advantages and quirks. The
+        'designer notes' in the rulebook candidly and humbly acknowledge the inspiration
+        for some of the improvements to the original game. The strategic game-play
+        borrows the governing element from 'Puerto Rico' to involve players in an
+        iteratively complex and yet fast-paced game experience with very little downtime.
+        The game map, basic player progress and overall victory are dynamically determined
+        in almost exactly the same way as they are by imaginative players of 'Settlers
+        of Catan', while the &amp;quot;Command&amp;quot; system cleverly improves
+        on the 'oil' logistical mechanism of 'Attack' to both manage turn-based activity
+        and limit the size of armies, uniquely enabling weakened players to bounce
+        back if they play their cards right.&amp;#10;&amp;#10;Part of the Twilight
+        Imperium Series.&amp;#10;&amp;#10;Re-implements:&amp;#10;&amp;#10;    Twilight
+        Imperium (second edition)&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;Expanded
+        by:&amp;#10;&amp;#10;    Twilight Imperium (Third Edition): Shattered Empire&amp;#10;
+        \   Twilight Imperium (Third Edition): Shards of the Throne&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;</description>\n\t\t\t\t\t\t\t\t\t\t
+        \     \t               \t\t\t\t<yearpublished value=\"2005\" />\n\t\t\t\t\t\t
+        \              \t\t\t\t<minplayers value=\"3\" />\n\t\t\t\t\t\t               \t\t\t\t<maxplayers
+        value=\"6\" />\n\t\t\t\t\t\t      \t\t\t<poll name=\"suggested_numplayers\"
+        title=\"User Suggested Number of Players\" totalvotes=\"349\">\n\t\t\t\n\t\t<results
+        numplayers=\"1\">\t\t\n\t\t\t\t\t<result value=\"Best\" numvotes=\"1\" />\n\t\t\t\t\t<result
+        value=\"Recommended\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"Not Recommended\"
+        numvotes=\"182\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"2\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"1\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"15\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"184\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"3\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"13\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"106\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"137\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"4\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"75\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"185\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"31\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"5\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"43\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"186\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"44\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"6\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"251\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"61\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"8\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"6+\">\t\t\n\t\t\t\t\t<result
+        value=\"Best\" numvotes=\"29\" />\n\t\t\t\t\t<result value=\"Recommended\"
+        numvotes=\"51\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"86\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \n\t\t\t               \t\t\t\t<playingtime
+        value=\"360\" />\n\t\t\t\t\t\t               \t\t\t\t<minage value=\"12\"
+        />\n\t\t\t\t\t\t      \t\t\t<poll name=\"suggested_playerage\" title=\"User
+        Suggested Player Age\" totalvotes=\"129\">\n\t\t\t<results>\t\t\n\t\t\t\t\t<result
+        value=\"2\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"3\" numvotes=\"0\"
+        />\n\t\t\t\t\t<result value=\"4\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"5\"
+        numvotes=\"0\" />\n\t\t\t\t\t<result value=\"6\" numvotes=\"0\" />\n\t\t\t\t\t<result
+        value=\"8\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"10\" numvotes=\"4\"
+        />\n\t\t\t\t\t<result value=\"12\" numvotes=\"28\" />\n\t\t\t\t\t<result value=\"14\"
+        numvotes=\"48\" />\n\t\t\t\t\t<result value=\"16\" numvotes=\"37\" />\n\t\t\t\t\t<result
+        value=\"18\" numvotes=\"6\" />\n\t\t\t\t\t<result value=\"21 and up\" numvotes=\"6\"
+        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \n\t\t\t      \t\t\t<poll name=\"language_dependence\"
+        title=\"Language Dependence\" totalvotes=\"152\">\n\t\t\t\n\t\t<results>\t\t\n\t\t\t\t\t<result
+        level=\"1\" value=\"No necessary in-game text\" numvotes=\"0\" />\n\t\t\t\t\t<result
+        level=\"2\" value=\"Some necessary text - easily memorized or small crib sheet\"
+        numvotes=\"0\" />\n\t\t\t\t\t<result level=\"3\" value=\"Moderate in-game
+        text - needs crib sheet or paste ups\" numvotes=\"8\" />\n\t\t\t\t\t<result
+        level=\"4\" value=\"Extensive use of text - massive conversion needed to be
+        playable\" numvotes=\"128\" />\n\t\t\t\t\t<result level=\"5\" value=\"Unplayable
+        in another language\" numvotes=\"16\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll>
+        \n\t\t\t      \t\t\t \n\t\t\t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamecategory\" id=\"1015\" value=\"Civilization\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1026\"
+        value=\"Negotiation\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1001\"
+        value=\"Political\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamecategory\" id=\"1016\" value=\"Science Fiction\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1113\"
+        value=\"Space Exploration\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1019\"
+        value=\"Wargame\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t      \t\t\t\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2001\"
+        value=\"Action Point Allowance System\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2021\"
+        value=\"Area-Impulse\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2072\"
+        value=\"Dice Rolling\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2026\"
+        value=\"Hex-and-Counter\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2011\"
+        value=\"Modular Board\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2028\"
+        value=\"Role Playing\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2008\"
+        value=\"Trading\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamemechanic\" id=\"2079\" value=\"Variable Phase Order\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2015\"
+        value=\"Variable Player Powers\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2017\"
+        value=\"Voting\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t      \t\t\t\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"12210\"
+        value=\"4X games\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamefamily\" id=\"9983\" value=\"Fantasy Flight Big Box\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"29\"
+        value=\"Twilight Imperium\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameexpansion\"
+        id=\"95802\" value=\"Twilight Imperium (Third Edition): Shards of the Throne\"
+        />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgameexpansion\" id=\"22821\" value=\"Twilight Imperium (Third
+        Edition): Shattered Empire\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
+        \     \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameimplementation\"
+        id=\"24\" value=\"Twilight Imperium\" inbound=\"true\"/>\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameimplementation\"
+        id=\"26055\" value=\"Twilight Imperium (second edition)\" inbound=\"true\"/>\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
+        \     \t      \t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
+        type=\"boardgamedesigner\" id=\"21\" value=\"Christian T. Petersen\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
+        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\"
+        id=\"11988\" value=\"Scott Schomburg\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"11989\"
+        value=\"Brian Schomburg\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
+        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"11990\"
+        value=\"Tyler Walpole\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
+        \     \t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\"
+        id=\"17\" value=\"Fantasy Flight Games\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t\n\t\n\n\t\n\n\t\n\t\n\t\n
+        \  \n\t\n          \n</item>\n</items>"
+    http_version: 
+  recorded_at: Wed, 17 Dec 2014 20:32:58 GMT
+recorded_with: VCR 2.9.3
