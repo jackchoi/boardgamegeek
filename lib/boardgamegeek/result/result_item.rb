@@ -2,9 +2,17 @@ module BoardGameGeek
   module Result
     class ResultItem
       attr_reader :id, :type
-      
+
       def initialize(item_data)
         process_item_data(item_data)
+      end
+      
+      def get_text_node_value(attribute)
+        attribute[:@children].first.to_s
+      end
+
+      def get_node_value(attribute)
+        attribute[:value]
       end
 
       private
