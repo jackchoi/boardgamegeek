@@ -12,6 +12,16 @@ module BoardGameGeek
           create_attribute(name, opts) { |attribute| attribute.value }
         end
 
+        def collection_reader(*args)
+          args.each do |property_name|
+            self.send :define_method, property_name do
+              var_name = "@#{property_name}"
+              self.instance_variable_set var_name, {} unless self.instance_variable_defined? var_name
+              self.instance_variable_get var_name
+            end
+          end
+        end
+
         private
 
         def create_attribute(name, opts = {}, &blk)

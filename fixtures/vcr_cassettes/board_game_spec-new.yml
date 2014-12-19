@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.boardgamegeek.com/xmlapi2/thing?id=12493
+    uri: http://www.boardgamegeek.com/xmlapi2/thing?id=70323
     body:
       encoding: US-ASCII
       string: ''
@@ -23,11 +23,11 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Wed, 17 Dec 2014 20:32:58 GMT
+      - Fri, 19 Dec 2014 19:09:12 GMT
       Content-Type:
       - text/xml; charset="UTF-8"
       Content-Length:
-      - '2293'
+      - '2477'
       X-Powered-By:
       - PHP/5.5.18
       Expires:
@@ -39,137 +39,231 @@ http_interactions:
       Set-Cookie:
       - geekproxy=; Expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?><items termsofuse=\"http://boardgamegeek.com/xmlapi/termsofuse\"><item
-        type=\"boardgame\" id=\"12493\">\n         <thumbnail>//cf.geekdo-images.com/images/pic50404_t.jpg</thumbnail>\n
-        \     <image>//cf.geekdo-images.com/images/pic50404.jpg</image>\n                                     \t\t\t\t\n\t\t\t\t<name
-        type=\"primary\" sortindex=\"1\" value=\"Twilight Imperium (Third Edition)\"
-        />\n\t\t\t\n\t\t\t\t\t\t                           \n\t\t\t\t\t\t               \t\t\t\t\t\t\t\t\t\t\t\t\t<description>Twilight
-        Imperium Third Edition is an epic empire-building game of interstellar conflict,
-        trade, and struggle for power. Players take the roles of ancient galactic
-        civilizations, each seeking to seize the imperial throne via warfare, diplomacy,
-        and technological progression. With geomorphic board tiles, exquisite plastic
-        miniatures, hundreds of cards, and introducing a rich set of strategic dimensions
-        that allows each player to refocus their game-plan, the original designer
-        Christian T. Petersen has seamlessly incorporated the better qualities of
-        other recently popular games to improve on the game-play of the original TI,
-        making it at once perfectly well-rounded and pleasantly familiar to experienced
-        gamers.&amp;#10;&amp;#10;TI3 is played by at least three players who belong
-        to ten possible alien races, each with their own advantages and quirks. The
-        'designer notes' in the rulebook candidly and humbly acknowledge the inspiration
-        for some of the improvements to the original game. The strategic game-play
-        borrows the governing element from 'Puerto Rico' to involve players in an
-        iteratively complex and yet fast-paced game experience with very little downtime.
-        The game map, basic player progress and overall victory are dynamically determined
-        in almost exactly the same way as they are by imaginative players of 'Settlers
-        of Catan', while the &amp;quot;Command&amp;quot; system cleverly improves
-        on the 'oil' logistical mechanism of 'Attack' to both manage turn-based activity
-        and limit the size of armies, uniquely enabling weakened players to bounce
-        back if they play their cards right.&amp;#10;&amp;#10;Part of the Twilight
-        Imperium Series.&amp;#10;&amp;#10;Re-implements:&amp;#10;&amp;#10;    Twilight
-        Imperium (second edition)&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;Expanded
-        by:&amp;#10;&amp;#10;    Twilight Imperium (Third Edition): Shattered Empire&amp;#10;
-        \   Twilight Imperium (Third Edition): Shards of the Throne&amp;#10;&amp;#10;&amp;#10;&amp;#10;&amp;#10;</description>\n\t\t\t\t\t\t\t\t\t\t
-        \     \t               \t\t\t\t<yearpublished value=\"2005\" />\n\t\t\t\t\t\t
-        \              \t\t\t\t<minplayers value=\"3\" />\n\t\t\t\t\t\t               \t\t\t\t<maxplayers
-        value=\"6\" />\n\t\t\t\t\t\t      \t\t\t<poll name=\"suggested_numplayers\"
-        title=\"User Suggested Number of Players\" totalvotes=\"349\">\n\t\t\t\n\t\t<results
-        numplayers=\"1\">\t\t\n\t\t\t\t\t<result value=\"Best\" numvotes=\"1\" />\n\t\t\t\t\t<result
-        value=\"Recommended\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"Not Recommended\"
-        numvotes=\"182\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"2\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"1\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"15\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"184\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"3\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"13\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"106\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"137\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"4\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"75\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"185\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"31\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"5\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"43\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"186\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"44\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"6\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"251\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"61\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"8\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t\t\t\n\t\t<results numplayers=\"6+\">\t\t\n\t\t\t\t\t<result
-        value=\"Best\" numvotes=\"29\" />\n\t\t\t\t\t<result value=\"Recommended\"
-        numvotes=\"51\" />\n\t\t\t\t\t<result value=\"Not Recommended\" numvotes=\"86\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \n\t\t\t               \t\t\t\t<playingtime
-        value=\"360\" />\n\t\t\t\t\t\t               \t\t\t\t<minage value=\"12\"
-        />\n\t\t\t\t\t\t      \t\t\t<poll name=\"suggested_playerage\" title=\"User
-        Suggested Player Age\" totalvotes=\"129\">\n\t\t\t<results>\t\t\n\t\t\t\t\t<result
-        value=\"2\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"3\" numvotes=\"0\"
-        />\n\t\t\t\t\t<result value=\"4\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"5\"
-        numvotes=\"0\" />\n\t\t\t\t\t<result value=\"6\" numvotes=\"0\" />\n\t\t\t\t\t<result
-        value=\"8\" numvotes=\"0\" />\n\t\t\t\t\t<result value=\"10\" numvotes=\"4\"
-        />\n\t\t\t\t\t<result value=\"12\" numvotes=\"28\" />\n\t\t\t\t\t<result value=\"14\"
-        numvotes=\"48\" />\n\t\t\t\t\t<result value=\"16\" numvotes=\"37\" />\n\t\t\t\t\t<result
-        value=\"18\" numvotes=\"6\" />\n\t\t\t\t\t<result value=\"21 and up\" numvotes=\"6\"
-        />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll> \n\t\t\t      \t\t\t<poll name=\"language_dependence\"
-        title=\"Language Dependence\" totalvotes=\"152\">\n\t\t\t\n\t\t<results>\t\t\n\t\t\t\t\t<result
-        level=\"1\" value=\"No necessary in-game text\" numvotes=\"0\" />\n\t\t\t\t\t<result
-        level=\"2\" value=\"Some necessary text - easily memorized or small crib sheet\"
-        numvotes=\"0\" />\n\t\t\t\t\t<result level=\"3\" value=\"Moderate in-game
-        text - needs crib sheet or paste ups\" numvotes=\"8\" />\n\t\t\t\t\t<result
-        level=\"4\" value=\"Extensive use of text - massive conversion needed to be
-        playable\" numvotes=\"128\" />\n\t\t\t\t\t<result level=\"5\" value=\"Unplayable
-        in another language\" numvotes=\"16\" />\n\t\t\t\t</results>\t\t\t\t\t\n\t</poll>
-        \n\t\t\t      \t\t\t \n\t\t\t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgamecategory\" id=\"1015\" value=\"Civilization\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1026\"
-        value=\"Negotiation\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1001\"
-        value=\"Political\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgamecategory\" id=\"1016\" value=\"Science Fiction\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1113\"
-        value=\"Space Exploration\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamecategory\" id=\"1019\"
-        value=\"Wargame\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t      \t\t\t\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2001\"
-        value=\"Action Point Allowance System\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2021\"
-        value=\"Area-Impulse\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2072\"
-        value=\"Dice Rolling\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2026\"
-        value=\"Hex-and-Counter\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2011\"
-        value=\"Modular Board\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2028\"
-        value=\"Role Playing\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2008\"
-        value=\"Trading\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgamemechanic\" id=\"2079\" value=\"Variable Phase Order\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2015\"
-        value=\"Variable Player Powers\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamemechanic\" id=\"2017\"
-        value=\"Voting\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t      \t\t\t\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"12210\"
-        value=\"4X games\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgamefamily\" id=\"9983\" value=\"Fantasy Flight Big Box\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamefamily\" id=\"29\"
-        value=\"Twilight Imperium\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
-        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameexpansion\"
-        id=\"95802\" value=\"Twilight Imperium (Third Edition): Shards of the Throne\"
-        />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgameexpansion\" id=\"22821\" value=\"Twilight Imperium (Third
-        Edition): Shattered Empire\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
-        \     \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t      \t\t\t\n\n\t\t\t
-        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameimplementation\"
-        id=\"24\" value=\"Twilight Imperium\" inbound=\"true\"/>\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameimplementation\"
-        id=\"26055\" value=\"Twilight Imperium (second edition)\" inbound=\"true\"/>\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
-        \     \t      \t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link
-        type=\"boardgamedesigner\" id=\"21\" value=\"Christian T. Petersen\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
-        \     \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\"
-        id=\"11988\" value=\"Scott Schomburg\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"11989\"
-        value=\"Brian Schomburg\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\t\n\t\t
-        \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgameartist\" id=\"11990\"
-        value=\"Tyler Walpole\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t
-        \     \t      \t\t\t\t\n\t\t \t\t\t\n\n\t\n\t\t\n\t\t\n\t\t\t\t\t<link type=\"boardgamepublisher\"
-        id=\"17\" value=\"Fantasy Flight Games\" />\n\t\t\n\t\t\n\t\t\t\t\t\n\t\t\n\t\t\t\t\n\n\n\t\t\t\n\t\n\n\t\n\n\t\n\t\n\t\n
-        \  \n\t\n          \n</item>\n</items>"
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48aXRlbXMg
+        dGVybXNvZnVzZT0iaHR0cDovL2JvYXJkZ2FtZWdlZWsuY29tL3htbGFwaS90
+        ZXJtc29mdXNlIj48aXRlbSB0eXBlPSJib2FyZGdhbWUiIGlkPSI3MDMyMyI+
+        CiAgICAgICAgIDx0aHVtYm5haWw+Ly9jZi5nZWVrZG8taW1hZ2VzLmNvbS9p
+        bWFnZXMvcGljNzYxNDM0X3QuanBnPC90aHVtYm5haWw+CiAgICAgIDxpbWFn
+        ZT4vL2NmLmdlZWtkby1pbWFnZXMuY29tL2ltYWdlcy9waWM3NjE0MzQuanBn
+        PC9pbWFnZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+        IAkJCQkKCQkJCTxuYW1lIHR5cGU9InByaW1hcnkiIHNvcnRpbmRleD0iMSIg
+        dmFsdWU9Iktpbmcgb2YgVG9reW8iIC8+CgkJCQoJCQkJCQkgICAgICAgICAg
+        ICAgICAgICAgICAgICAgICAgICAgCQkJCQoJCQkJPG5hbWUgdHlwZT0iYWx0
+        ZXJuYXRlIiBzb3J0aW5kZXg9IjEiIHZhbHVlPSJLaW5nIG9mIFRva3lvOiBM
+        YSBGdXJpYSBkZWkgTW9zdHJpIiAvPgoJCQkgICAgCQkJCQoJCQkJPG5hbWUg
+        dHlwZT0iYWx0ZXJuYXRlIiBzb3J0aW5kZXg9IjEiIHZhbHVlPSJQb3R3b3J5
+        IHcgVG9raW8iIC8+CgkJCSAgICAJCQkJCgkJCQk8bmFtZSB0eXBlPSJhbHRl
+        cm5hdGUiIHNvcnRpbmRleD0iMSIgdmFsdWU9IlJlZ2VsZSBkaW4gVG9reW8i
+        IC8+CgkJCSAgICAJCQkJCgkJCQk8bmFtZSB0eXBlPSJhbHRlcm5hdGUiIHNv
+        cnRpbmRleD0iMSIgdmFsdWU9IlRva2nDsyBLaXLDoWx5YSIgLz4KCQkJICAg
+        IAkJCQkKCQkJCTxuYW1lIHR5cGU9ImFsdGVybmF0ZSIgc29ydGluZGV4PSIx
+        IiB2YWx1ZT0iVmzDoWRjZSBUb2tpYSIgLz4KCQkJICAgIAkJCQkKCQkJCTxu
+        YW1lIHR5cGU9ImFsdGVybmF0ZSIgc29ydGluZGV4PSIxIiB2YWx1ZT0izp8g
+        zpLOsc+DzrnOu865zqzPgiDOpM6/z4UgzqTPjM66z4XOvyIgLz4KCQkJICAg
+        IAkJCQkKCQkJCTxuYW1lIHR5cGU9ImFsdGVybmF0ZSIgc29ydGluZGV4PSIx
+        IiB2YWx1ZT0i0JrRgNCw0LvRj9GCINC90LAg0KLQvtC60LjQviIgLz4KCQkJ
+        ICAgIAkJCQkKCQkJCTxuYW1lIHR5cGU9ImFsdGVybmF0ZSIgc29ydGluZGV4
+        PSIxIiB2YWx1ZT0i0J/QvtCy0LXQu9C40YLQtdC70Ywg0KLQvtC60LjQviIg
+        Lz4KCQkJICAgIAkJCQkKCQkJCTxuYW1lIHR5cGU9ImFsdGVybmF0ZSIgc29y
+        dGluZGV4PSIxIiB2YWx1ZT0i44Kt44Oz44Kw44O744Kq44OW44O744OI44O8
+        44Kt44On44O8IiAvPgoJCQkgICAgCQkJCQoJCQkJPG5hbWUgdHlwZT0iYWx0
+        ZXJuYXRlIiBzb3J0aW5kZXg9IjEiIHZhbHVlPSLmnbHkuqzkuYvnjosiIC8+
+        CgkJCQoJCQkJCQkgICAgICAgICAgICAgICAJCQkJCQkJCQkJCQkJPGRlc2Ny
+        aXB0aW9uPkluIEtpbmcgb2YgVG9reW8sIHlvdSBwbGF5IG11dGFudCBtb25z
+        dGVycywgZ2lnYW50aWMgcm9ib3RzLCBhbmQgc3RyYW5nZSBhbGllbnMgJmFt
+        cDtuZGFzaDsgYWxsIG9mIHdob20gYXJlIGRlc3Ryb3lpbmcgVG9reW8gYW5k
+        IHdoYWNraW5nIGVhY2ggb3RoZXIgaW4gb3JkZXIgdG8gYmVjb21lIHRoZSBv
+        bmUgYW5kIG9ubHkgS2luZyBvZiBUb2t5by4mYW1wOyMxMDsmYW1wOyMxMDtB
+        dCB0aGUgc3RhcnQgb2YgZWFjaCB0dXJuLCB5b3Ugcm9sbCBzaXggZGljZS4g
+        VGhlIGRpY2Ugc2hvdyB0aGUgZm9sbG93aW5nIHNpeCBzeW1ib2xzOiAxLCAy
+        LCBvciAzIFZpY3RvcnkgUG9pbnRzLCBFbmVyZ3ksIEhlYWwsIGFuZCBBdHRh
+        Y2suIE92ZXIgdGhyZWUgc3VjY2Vzc2l2ZSB0aHJvd3MsIGNob29zZSB3aGV0
+        aGVyIHRvIGtlZXAgb3IgZGlzY2FyZCBlYWNoIGRpZSBpbiBvcmRlciB0byB3
+        aW4gdmljdG9yeSBwb2ludHMsIGdhaW4gZW5lcmd5LCByZXN0b3JlIGhlYWx0
+        aCwgb3IgYXR0YWNrIG90aGVyIHBsYXllcnMgaW50byB1bmRlcnN0YW5kaW5n
+        IHRoYXQgVG9reW8gaXMgWU9VUiB0ZXJyaXRvcnkuJmFtcDsjMTA7JmFtcDsj
+        MTA7VGhlIGZpZXJjZXN0IHBsYXllciB3aWxsIG9jY3VweSBUb2t5bywgYW5k
+        IGVhcm4gZXh0cmEgdmljdG9yeSBwb2ludHMsIGJ1dCB0aGF0IHBsYXllciBj
+        YW4ndCBoZWFsIGFuZCBtdXN0IGZhY2UgYWxsIHRoZSBvdGhlciBtb25zdGVy
+        cyBhbG9uZSEmYW1wOyMxMDsmYW1wOyMxMDtUb3AgdGhpcyBvZmYgd2l0aCBz
+        cGVjaWFsIGNhcmRzIHB1cmNoYXNlZCB3aXRoIGVuZXJneSB0aGF0IGhhdmUg
+        YSBwZXJtYW5lbnQgb3IgdGVtcG9yYXJ5IGVmZmVjdCwgc3VjaCBhcyB0aGUg
+        Z3Jvd2luZyBvZiBhIHNlY29uZCBoZWFkIHdoaWNoIGdyYW50cyB5b3UgYW4g
+        YWRkaXRpb25hbCBkaWUsIGJvZHkgYXJtb3IsIG5vdmEgZGVhdGggcmF5LCBh
+        bmQgbW9yZS4uLi4gYW5kIGl0J3Mgb25lIG9mIHRoZSBtb3N0IGV4cGxvc2l2
+        ZSBnYW1lcyBvZiB0aGUgeWVhciEmYW1wOyMxMDsmYW1wOyMxMDtJbiBvcmRl
+        ciB0byB3aW4gdGhlIGdhbWUsIG9uZSBtdXN0IGVpdGhlciBkZXN0cm95IFRv
+        a3lvIGJ5IGFjY3VtdWxhdGluZyAyMCB2aWN0b3J5IHBvaW50cywgb3IgYmUg
+        dGhlIG9ubHkgc3Vydml2aW5nIG1vbnN0ZXIgb25jZSB0aGUgZmlnaHRpbmcg
+        aGFzIGVuZGVkLiZhbXA7IzEwOyZhbXA7IzEwOzwvZGVzY3JpcHRpb24+CgkJ
+        CQkJCQkJCQkgICAgICAJICAgICAgICAgICAgICAgCQkJCTx5ZWFycHVibGlz
+        aGVkIHZhbHVlPSIyMDExIiAvPgoJCQkJCQkgICAgICAgICAgICAgICAJCQkJ
+        PG1pbnBsYXllcnMgdmFsdWU9IjIiIC8+CgkJCQkJCSAgICAgICAgICAgICAg
+        IAkJCQk8bWF4cGxheWVycyB2YWx1ZT0iNiIgLz4KCQkJCQkJICAgICAgCQkJ
+        PHBvbGwgbmFtZT0ic3VnZ2VzdGVkX251bXBsYXllcnMiIHRpdGxlPSJVc2Vy
+        IFN1Z2dlc3RlZCBOdW1iZXIgb2YgUGxheWVycyIgdG90YWx2b3Rlcz0iMzM4
+        Ij4KCQkJCgkJPHJlc3VsdHMgbnVtcGxheWVycz0iMSI+CQkKCQkJCQk8cmVz
+        dWx0IHZhbHVlPSJCZXN0IiBudW12b3Rlcz0iMCIgLz4KCQkJCQk8cmVzdWx0
+        IHZhbHVlPSJSZWNvbW1lbmRlZCIgbnVtdm90ZXM9IjEiIC8+CgkJCQkJPHJl
+        c3VsdCB2YWx1ZT0iTm90IFJlY29tbWVuZGVkIiBudW12b3Rlcz0iMjAyIiAv
+        PgoJCQkJPC9yZXN1bHRzPgkJCQkJCgkJCQoJCTxyZXN1bHRzIG51bXBsYXll
+        cnM9IjIiPgkJCgkJCQkJPHJlc3VsdCB2YWx1ZT0iQmVzdCIgbnVtdm90ZXM9
+        IjQiIC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0iUmVjb21tZW5kZWQiIG51bXZv
+        dGVzPSI1NSIgLz4KCQkJCQk8cmVzdWx0IHZhbHVlPSJOb3QgUmVjb21tZW5k
+        ZWQiIG51bXZvdGVzPSIyMDgiIC8+CgkJCQk8L3Jlc3VsdHM+CQkJCQkKCQkJ
+        CgkJPHJlc3VsdHMgbnVtcGxheWVycz0iMyI+CQkKCQkJCQk8cmVzdWx0IHZh
+        bHVlPSJCZXN0IiBudW12b3Rlcz0iMzMiIC8+CgkJCQkJPHJlc3VsdCB2YWx1
+        ZT0iUmVjb21tZW5kZWQiIG51bXZvdGVzPSIyMTIiIC8+CgkJCQkJPHJlc3Vs
+        dCB2YWx1ZT0iTm90IFJlY29tbWVuZGVkIiBudW12b3Rlcz0iMzAiIC8+CgkJ
+        CQk8L3Jlc3VsdHM+CQkJCQkKCQkJCgkJPHJlc3VsdHMgbnVtcGxheWVycz0i
+        NCI+CQkKCQkJCQk8cmVzdWx0IHZhbHVlPSJCZXN0IiBudW12b3Rlcz0iMjE4
+        IiAvPgoJCQkJCTxyZXN1bHQgdmFsdWU9IlJlY29tbWVuZGVkIiBudW12b3Rl
+        cz0iODgiIC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0iTm90IFJlY29tbWVuZGVk
+        IiBudW12b3Rlcz0iMyIgLz4KCQkJCTwvcmVzdWx0cz4JCQkJCQoJCQkKCQk8
+        cmVzdWx0cyBudW1wbGF5ZXJzPSI1Ij4JCQoJCQkJCTxyZXN1bHQgdmFsdWU9
+        IkJlc3QiIG51bXZvdGVzPSIxNDUiIC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0i
+        UmVjb21tZW5kZWQiIG51bXZvdGVzPSIxMjEiIC8+CgkJCQkJPHJlc3VsdCB2
+        YWx1ZT0iTm90IFJlY29tbWVuZGVkIiBudW12b3Rlcz0iMTEiIC8+CgkJCQk8
+        L3Jlc3VsdHM+CQkJCQkKCQkJCgkJPHJlc3VsdHMgbnVtcGxheWVycz0iNiI+
+        CQkKCQkJCQk8cmVzdWx0IHZhbHVlPSJCZXN0IiBudW12b3Rlcz0iODgiIC8+
+        CgkJCQkJPHJlc3VsdCB2YWx1ZT0iUmVjb21tZW5kZWQiIG51bXZvdGVzPSIx
+        NDgiIC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0iTm90IFJlY29tbWVuZGVkIiBu
+        dW12b3Rlcz0iMzQiIC8+CgkJCQk8L3Jlc3VsdHM+CQkJCQkKCQkJCgkJPHJl
+        c3VsdHMgbnVtcGxheWVycz0iNisiPgkJCgkJCQkJPHJlc3VsdCB2YWx1ZT0i
+        QmVzdCIgbnVtdm90ZXM9IjIiIC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0iUmVj
+        b21tZW5kZWQiIG51bXZvdGVzPSIyMiIgLz4KCQkJCQk8cmVzdWx0IHZhbHVl
+        PSJOb3QgUmVjb21tZW5kZWQiIG51bXZvdGVzPSIxMDgiIC8+CgkJCQk8L3Jl
+        c3VsdHM+CQkJCQkKCTwvcG9sbD4gCgkJCSAgICAgICAgICAgICAgIAkJCQk8
+        cGxheWluZ3RpbWUgdmFsdWU9IjMwIiAvPgoJCQkJCQkgICAgICAgICAgICAg
+        ICAJCQkJPG1pbmFnZSB2YWx1ZT0iOCIgLz4KCQkJCQkJICAgICAgCQkJPHBv
+        bGwgbmFtZT0ic3VnZ2VzdGVkX3BsYXllcmFnZSIgdGl0bGU9IlVzZXIgU3Vn
+        Z2VzdGVkIFBsYXllciBBZ2UiIHRvdGFsdm90ZXM9IjExMCI+CgkJCTxyZXN1
+        bHRzPgkJCgkJCQkJPHJlc3VsdCB2YWx1ZT0iMiIgbnVtdm90ZXM9IjAiIC8+
+        CgkJCQkJPHJlc3VsdCB2YWx1ZT0iMyIgbnVtdm90ZXM9IjEiIC8+CgkJCQkJ
+        PHJlc3VsdCB2YWx1ZT0iNCIgbnVtdm90ZXM9IjQiIC8+CgkJCQkJPHJlc3Vs
+        dCB2YWx1ZT0iNSIgbnVtdm90ZXM9IjkiIC8+CgkJCQkJPHJlc3VsdCB2YWx1
+        ZT0iNiIgbnVtdm90ZXM9IjQ1IiAvPgoJCQkJCTxyZXN1bHQgdmFsdWU9Ijgi
+        IG51bXZvdGVzPSIzOSIgLz4KCQkJCQk8cmVzdWx0IHZhbHVlPSIxMCIgbnVt
+        dm90ZXM9IjEwIiAvPgoJCQkJCTxyZXN1bHQgdmFsdWU9IjEyIiBudW12b3Rl
+        cz0iMiIgLz4KCQkJCQk8cmVzdWx0IHZhbHVlPSIxNCIgbnVtdm90ZXM9IjAi
+        IC8+CgkJCQkJPHJlc3VsdCB2YWx1ZT0iMTYiIG51bXZvdGVzPSIwIiAvPgoJ
+        CQkJCTxyZXN1bHQgdmFsdWU9IjE4IiBudW12b3Rlcz0iMCIgLz4KCQkJCQk8
+        cmVzdWx0IHZhbHVlPSIyMSBhbmQgdXAiIG51bXZvdGVzPSIwIiAvPgoJCQkJ
+        PC9yZXN1bHRzPgkJCQkJCgk8L3BvbGw+IAoJCQkgICAgICAJCQk8cG9sbCBu
+        YW1lPSJsYW5ndWFnZV9kZXBlbmRlbmNlIiB0aXRsZT0iTGFuZ3VhZ2UgRGVw
+        ZW5kZW5jZSIgdG90YWx2b3Rlcz0iOTEiPgoJCQkKCQk8cmVzdWx0cz4JCQoJ
+        CQkJCTxyZXN1bHQgbGV2ZWw9IjEiIHZhbHVlPSJObyBuZWNlc3NhcnkgaW4t
+        Z2FtZSB0ZXh0IiBudW12b3Rlcz0iMSIgLz4KCQkJCQk8cmVzdWx0IGxldmVs
+        PSIyIiB2YWx1ZT0iU29tZSBuZWNlc3NhcnkgdGV4dCAtIGVhc2lseSBtZW1v
+        cml6ZWQgb3Igc21hbGwgY3JpYiBzaGVldCIgbnVtdm90ZXM9IjEzIiAvPgoJ
+        CQkJCTxyZXN1bHQgbGV2ZWw9IjMiIHZhbHVlPSJNb2RlcmF0ZSBpbi1nYW1l
+        IHRleHQgLSBuZWVkcyBjcmliIHNoZWV0IG9yIHBhc3RlIHVwcyIgbnVtdm90
+        ZXM9IjY4IiAvPgoJCQkJCTxyZXN1bHQgbGV2ZWw9IjQiIHZhbHVlPSJFeHRl
+        bnNpdmUgdXNlIG9mIHRleHQgLSBtYXNzaXZlIGNvbnZlcnNpb24gbmVlZGVk
+        IHRvIGJlIHBsYXlhYmxlIiBudW12b3Rlcz0iOSIgLz4KCQkJCQk8cmVzdWx0
+        IGxldmVsPSI1IiB2YWx1ZT0iVW5wbGF5YWJsZSBpbiBhbm90aGVyIGxhbmd1
+        YWdlIiBudW12b3Rlcz0iMCIgLz4KCQkJCTwvcmVzdWx0cz4JCQkJCQoJPC9w
+        b2xsPiAKCQkJICAgICAgCQkJIAoJCQkgICAgICAJCQkJCgkJIAkJCQoKCQkJ
+        CgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lY2F0ZWdvcnkiIGlkPSIx
+        MDE3IiB2YWx1ZT0iRGljZSIgLz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkgCQkJ
+        CgoJCQkKCQkKCQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVjYXRlZ29yeSIg
+        aWQ9IjEwNDYiIHZhbHVlPSJGaWdodGluZyIgLz4KCQkKCQkJCQkJCQkJCgkJ
+        CQkKCQkgCQkJCgoJCQkKCQkKCQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVj
+        YXRlZ29yeSIgaWQ9IjEwNjQiIHZhbHVlPSJNb3ZpZXMgLyBUViAvIFJhZGlv
+        IHRoZW1lIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJ
+        CQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZWNhdGVnb3J5IiBpZD0iMTAxNiIg
+        dmFsdWU9IlNjaWVuY2UgRmljdGlvbiIgLz4KCQkKCQkJCQkJCQkJCgkJCQoK
+        CQkJICAgICAgCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9
+        ImJvYXJkZ2FtZW1lY2hhbmljIiBpZD0iMjA0MSIgdmFsdWU9IkNhcmQgRHJh
+        ZnRpbmciIC8+CgkJCgkJCQkJCQkJCQoJCQkJCgkJIAkJCQoKCQkJCgkJCgkJ
+        CQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lbWVjaGFuaWMiIGlkPSIyMDcyIiB2
+        YWx1ZT0iRGljZSBSb2xsaW5nIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJ
+        CQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZW1lY2hhbmlj
+        IiBpZD0iMjY4NSIgdmFsdWU9IlBsYXllciBFbGltaW5hdGlvbiIgLz4KCQkK
+        CQkJCQkJCQkJCgkJCQoKCQkJICAgICAgCQkJCQoJCSAJCQkKCgkJCQoJCQoJ
+        CQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZWZhbWlseSIgaWQ9Ijk0NzAiIHZh
+        bHVlPSJBc2lhbiBUaGVtZSIgLz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkgCQkJ
+        CgoJCQkKCQkKCQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVmYW1pbHkiIGlk
+        PSIxODYxNiIgdmFsdWU9IkNpdGllczogVG9reW8iIC8+CgkJCgkJCQkJCQkJ
+        CQoJCQkJCgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRn
+        YW1lZmFtaWx5IiBpZD0iMTA2MzQiIHZhbHVlPSJDb3VudHJ5OiBKYXBhbiIg
+        Lz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkgCQkJCgoJCQkKCQkKCQkJCQk8bGlu
+        ayB0eXBlPSJib2FyZGdhbWVmYW1pbHkiIGlkPSIyNDU2OSIgdmFsdWU9Ikth
+        aWp1IiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJ
+        CTxsaW5rIHR5cGU9ImJvYXJkZ2FtZWZhbWlseSIgaWQ9IjU2MTUiIHZhbHVl
+        PSJNb25zdGVycyIgLz4KCQkKCQkJCQkJCQkJCgkJCQoKCQkJICAgICAgCQkJ
+        CQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZWV4
+        cGFuc2lvbiIgaWQ9Ijk4ODMzIiB2YWx1ZT0iS2luZyBvZiBUb2t5byBQcm9t
+        byBDYXJkcyIgLz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkgCQkJCgoJCQkKCQkK
+        CQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVleHBhbnNpb24iIGlkPSIxMzI1
+        MzAiIHZhbHVlPSJLaW5nIG9mIFRva3lvOiBHYXJmaWVsZCdzIEdpZnQgUHJv
+        bW8gQ2FyZCIgLz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkgCQkJCgoJCQkKCQkK
+        CQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVleHBhbnNpb24iIGlkPSIxNDcx
+        ODMiIHZhbHVlPSJLaW5nIG9mIFRva3lvOiBIYWxsb3dlZW4iIC8+CgkJCgkJ
+        CQkJCQkJCQoJCQkJCgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0i
+        Ym9hcmRnYW1lZXhwYW5zaW9uIiBpZD0iMTI3MDY3IiB2YWx1ZT0iS2luZyBv
+        ZiBUb2t5bzogUG93ZXIgVXAhIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJ
+        CQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZWV4cGFuc2lv
+        biIgaWQ9IjE1NDk0NSIgdmFsdWU9Iktpbmcgb2YgVG9reW86IFRoZSBIb3Jk
+        ZSBQcm9tbyBDYXJkIiAvPgoJCQoJCQkJCQkJCQkKCQkJCgoJCQkgICAgICAJ
+        CQkKCgkJCSAgICAgIAkJCQoKCQkJICAgICAgCQkJCgoJCQkgICAgICAJCQkJ
+        CgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1laW1w
+        bGVtZW50YXRpb24iIGlkPSIxNjA0OTkiIHZhbHVlPSJLaW5nIG9mIE5ldyBZ
+        b3JrIiAvPgoJCQoJCQkJCQkJCQkKCQkJCgoJCQkgICAgICAJCQkKCgkJCSAg
+        ICAgIAkgICAgICAJICAgICAgCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxs
+        aW5rIHR5cGU9ImJvYXJkZ2FtZWRlc2lnbmVyIiBpZD0iMTQiIHZhbHVlPSJS
+        aWNoYXJkIEdhcmZpZWxkIiAvPgoJCQoJCQkJCQkJCQkKCQkJCgoJCQkgICAg
+        ICAJCQkJCgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRn
+        YW1lYXJ0aXN0IiBpZD0iNDgzMzciIHZhbHVlPSJCZW5qYW1pbiBSYXluYWwi
+        IC8+CgkJCgkJCQkJCQkJCQoJCQkKCgkJCSAgICAgIAkgICAgICAJCQkJCgkJ
+        IAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lcHVibGlz
+        aGVyIiBpZD0iNjc4NCIgdmFsdWU9IkJlcmdzYWxhIEVuaWdtYSIgLz4KCQkK
+        CQkJCQkJCQkJCgkJCQkKCQkgCQkJCgoJCQkKCQkKCQkJCQk8bGluayB0eXBl
+        PSJib2FyZGdhbWVwdWJsaXNoZXIiIGlkPSI2MTk0IiB2YWx1ZT0iRGVsdGEg
+        VmlzaW9uIFB1Ymxpc2hpbmciIC8+CgkJCgkJCQkJCQkJCQoJCQkJCgkJIAkJ
+        CQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lcHVibGlzaGVy
+        IiBpZD0iNzQ5NiIgdmFsdWU9IkVnbW9udCBQb2xza2EiIC8+CgkJCgkJCQkJ
+        CQkJCQoJCQkJCgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9h
+        cmRnYW1lcHVibGlzaGVyIiBpZD0iMjI1NjAiIHZhbHVlPSJGYW50YXNtYWdv
+        cmlhIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJ
+        CTxsaW5rIHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9IjE1NjA1IiB2
+        YWx1ZT0iR2Fsw6FwYWdvcyBKb2dvcyIgLz4KCQkKCQkJCQkJCQkJCgkJCQkK
+        CQkgCQkJCgoJCQkKCQkKCQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVwdWJs
+        aXNoZXIiIGlkPSIyMjY1MCIgdmFsdWU9IkdlR2UgQ28gTHRkIiAvPgoJCQoJ
+        CQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9
+        ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9IjI2NCIgdmFsdWU9IkhlaWRlbGJl
+        cmdlciBTcGllbGV2ZXJsYWciIC8+CgkJCgkJCQkJCQkJCQoJCQkJCgkJIAkJ
+        CQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lcHVibGlzaGVy
+        IiBpZD0iMTM5MSIgdmFsdWU9IkhvYmJ5IEphcGFuIiAvPgoJCQoJCQkJCQkJ
+        CQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJk
+        Z2FtZXB1Ymxpc2hlciIgaWQ9IjE4ODUyIiB2YWx1ZT0iSG9iYnkgV29ybGQi
+        IC8+CgkJCgkJCQkJCQkJCQoJCQkJCgkJIAkJCQoKCQkJCgkJCgkJCQkJPGxp
+        bmsgdHlwZT0iYm9hcmRnYW1lcHVibGlzaGVyIiBpZD0iNjI3NSIgdmFsdWU9
+        IkhvbW9MdWRpY3VzIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJ
+        CQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9
+        Ijg5MjMiIHZhbHVlPSJJRUxMTyIgLz4KCQkKCQkJCQkJCQkJCgkJCQkKCQkg
+        CQkJCgoJCQkKCQkKCQkJCQk8bGluayB0eXBlPSJib2FyZGdhbWVwdWJsaXNo
+        ZXIiIGlkPSI2MjE0IiB2YWx1ZT0iS2Fpc3NhIENoZXNzICZhbXA7IEdhbWVz
+        IiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxs
+        aW5rIHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9IjMyMTgiIHZhbHVl
+        PSJMYXV0YXBlbGl0LmZpIiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkK
+        CgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIg
+        aWQ9IjI1MjAzIiB2YWx1ZT0iTGV4IEdhbWVzIiAvPgoJCQoJCQkJCQkJCQkK
+        CQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2Ft
+        ZXB1Ymxpc2hlciIgaWQ9IjExMTA3IiB2YWx1ZT0iTm9yZGljIEdhbWVzIiAv
+        PgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJCQkJCTxsaW5r
+        IHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9IjIxMDUzIiB2YWx1ZT0i
+        UkVYaHJ5IiAvPgoJCQoJCQkJCQkJCQkKCQkJCQoJCSAJCQkKCgkJCQoJCQoJ
+        CQkJCTxsaW5rIHR5cGU9ImJvYXJkZ2FtZXB1Ymxpc2hlciIgaWQ9IjgzMTMi
+        IHZhbHVlPSJTbWFydCBMdGQiIC8+CgkJCgkJCQkJCQkJCQoJCQkJCgkJIAkJ
+        CQoKCQkJCgkJCgkJCQkJPGxpbmsgdHlwZT0iYm9hcmRnYW1lcHVibGlzaGVy
+        IiBpZD0iMTc3ODYiIHZhbHVlPSJ1cGxheS5pdCBlZGl6aW9uaSIgLz4KCQkK
+        CQkJCQkJCQkJCgkJCQkKCQkgCQkJCgoJCQkKCQkKCQkJCQk8bGluayB0eXBl
+        PSJib2FyZGdhbWVwdWJsaXNoZXIiIGlkPSIxNDA3OCIgdmFsdWU9IlZlbm5l
+        csO4ZCBGb3JsYWcgQVMiIC8+CgkJCgkJCQkJCQkJCQoJCQkKCgkJCQoJCgoJ
+        CgoJCgkKCQogICAKCQogICAgICAgICAgCjwvaXRlbT4KPC9pdGVtcz4=
     http_version: 
-  recorded_at: Wed, 17 Dec 2014 20:32:58 GMT
+  recorded_at: Fri, 19 Dec 2014 19:09:12 GMT
 recorded_with: VCR 2.9.3
