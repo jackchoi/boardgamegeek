@@ -1,3 +1,5 @@
+require_relative "item_attribute"
+
 module BoardGameGeek
   module Result
     class ResultItem
@@ -6,23 +8,12 @@ module BoardGameGeek
       def initialize(item_data)
         process_item_data(item_data)
       end
-      
-      def get_text_node_value(attribute)
-        attribute[:@children].first.to_s
-      end
-
-      def get_node_value(attribute)
-        attribute[:value]
-      end
 
       private
 
       def process_item_data(item_data)
         set_basic_attributes(item_data)
-
-        item_data[:@children].each do |attribute|
-          invoke_attribute_callbacks(attribute)
-        end
+        set_custom_attributes(item_data)
       end
 
       def set_basic_attributes(item_data)
@@ -30,8 +21,14 @@ module BoardGameGeek
         @type = item_data[:type].to_sym
       end
 
-      def invoke_attribute_callbacks(attribute)
-        meth = "set_#{attribute[:@name]}"
+      def set_custom_attributes(item_data)
+        item_data[:@children].each do |attribute|
+          set_custom_attribute ItemAttribute.new(attribute)
+        end
+      end 
+
+      def set_custom_attribute(attribute)
+        meth = "set_#{attribute.name}"
         if self.respond_to? meth
           self.send meth, attribute
         end

@@ -9,35 +9,35 @@ module BoardGameGeek
                   :boardgame_designer, :boardgame_artist, :boardgame_publisher
 
       def set_thumbnail(attribute)
-        @thumbnail = get_text_node_value(attribute)
+        @thumbnail = attribute.text_value
       end
 
       def set_image(attribute)
-        @image = get_text_node_value(attribute)
+        @image = attribute.text_value
       end
 
       def set_name(attribute)
-        @name = get_node_value(attribute).to_s
+        @name = attribute.value
       end
 
       def set_description(attribute)
-        @description = get_text_node_value(attribute)
+        @description = attribute.text_value
       end
 
       def set_yearpublished(attribute)
-        @year_published = get_node_value(attribute).to_i
+        @year_published = attribute.value.to_i
       end
 
       def set_minplayers(attribute)
-        @min_players = get_node_value(attribute).to_i
+        @min_players = attribute.value.to_i
       end
 
       def set_maxplayers(attribute)
-        @max_players = get_node_value(attribute).to_i
+        @max_players = attribute.value.to_i
       end
 
       def set_playingtime(attribute)
-        @playing_time = get_node_value(attribute).to_i
+        @playing_time = attribute.value.to_i
       end
     end
   end
