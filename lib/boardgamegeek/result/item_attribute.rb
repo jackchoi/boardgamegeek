@@ -14,8 +14,10 @@ module BoardGameGeek
           @data[:@children].first.to_s
         end
 
-        def value
-          @data[:value]
+        def method_missing(meth)
+          if @data.key? meth.to_sym
+            @data[meth.to_sym]
+          end
         end
       end
     end

@@ -4,19 +4,17 @@ module BoardGameGeek
   module Result
     class ResultItem
       describe ItemAttribute do
-        subject { ItemAttribute.new :@name => "image", :value => "5", :@children => ["some text value"] }
-
-        context "#name" do
-          its(:name) { is_expected.to eq("image") }
+        subject do
+          ItemAttribute.new :@name => "image",
+                            :value => "5",
+                            :type => "primary",
+                            :@children => ["some text value"]
         end
 
-        context "#text_value" do
-          its(:text_value) { is_expected.to eq("some text value") }
-        end
-
-        context "#value" do
-          its(:value) { is_expected.to eq("5") }
-        end
+        its(:name) { is_expected.to eq("image") }
+        its(:text_value) { is_expected.to eq("some text value") }
+        its(:value) { is_expected.to eq("5") }
+        its(:type) { is_expected.to eq("primary") }
       end
     end
   end
