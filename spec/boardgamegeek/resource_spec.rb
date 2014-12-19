@@ -37,11 +37,11 @@ module BoardGameGeek
       end
 
       it "yields the parsed return data" do
-        expect{ |b| resource_class.request(:foo => "bar", &b) }.to yield_with_args(Hash)
+        expect{ |b| resource_class.request(:foo => "bar", &b) }.to yield_with_args(Result::ResultSet)
       end
 
       it "returns the parsed return data" do
-        expect(resource_class.request(:foo => "bar")).to be_a(Hash)
+        expect(resource_class.request(:foo => "bar")).to be_a(Result::ResultSet)
       end
     end
   end

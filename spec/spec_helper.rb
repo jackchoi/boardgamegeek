@@ -9,6 +9,7 @@ if ENV['COVERAGE'] == "true"
 end
 
 require 'boardgamegeek'
+require 'boardgamegeek/spec_helper'
 require 'rspec'
 require 'rspec/its'
 require 'webmock/rspec'

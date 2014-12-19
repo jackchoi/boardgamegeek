@@ -6,7 +6,7 @@ module BoardGameGeek
       context "::new" do
         before :all do
           payload = VCR.use_cassette "board_game_spec-new" do
-            BoardGameGeek.api_handler.get :thing, :id => 70323
+            make_http_request "http://www.boardgamegeek.com/xmlapi2/thing?id=70323"
           end
 
           @board_game = BoardGame.new(payload[:@children].first)

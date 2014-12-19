@@ -29,6 +29,10 @@ module BoardGameGeek
   @marshaller = Marshaller.new(Result::ResultSet)
   @marshaller.define_default_association(Result::ResultItem) do |item_type|
     # TODO: define associations between item_type and BoardGameGeek::Result::ResultItem's
+    case item_type
+    when :boardgame then Result::BoardGame
+    else Result::ResultItem
+    end
   end
 
   autoload :Resource, "boardgamegeek/resource"

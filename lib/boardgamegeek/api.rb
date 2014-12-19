@@ -6,6 +6,7 @@ module BoardGameGeek
       @uri_helper = URIHelper.new(opts[:base_url])
       @request_handler = opts[:request_handler]
       @parser = opts[:parser]
+      @marshaller = opts[:marshaller]
     end
 
     def get(resource_name, params = {})
@@ -33,7 +34,7 @@ module BoardGameGeek
     end
 
     def process_response(content)
-      @parser.parse(content[:body])
+      @marshaller.unmarshall @parser.parse(content[:body])
     end
   end
 end

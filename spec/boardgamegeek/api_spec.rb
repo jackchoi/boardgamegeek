@@ -13,9 +13,10 @@ module BoardGameGeek
         end
 
         it "returns properly parsed response" do
-          expect(valid_response[:total]).to eq("1")
-          expect(valid_response[:@children].count).to eq(1)
-          expect(valid_response[:@children].first[:type]).to eq("boardgame")
+          expect(valid_response.length).to eq(1)
+          expect(valid_response.first).to be_a(Result::BoardGame)
+          expect(valid_response.first.name).to eq("King of Tokyo")
+          expect(valid_response.first.type).to eq(:boardgame)
         end
       end
 

@@ -77,7 +77,7 @@ module BoardGameGeek
         end
 
         @content = VCR.use_cassette "unmarshall_spec" do
-          BoardGameGeek.api_handler.get(:thing, :id => [12493, 95802, 70722, 162996])
+          make_http_request "http://www.boardgamegeek.com/xmlapi2/thing?id=12493,95802,70722,162996"
         end
 
         marshaller = Marshaller.new(SomeCollection)

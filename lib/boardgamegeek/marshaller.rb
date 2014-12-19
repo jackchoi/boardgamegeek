@@ -54,8 +54,10 @@ module BoardGameGeek
     end
 
     def unmarshall_item(item)
-      class_name = get_association(item[:type])
-      class_name.new(item)
+      if item[:type]
+        class_name = get_association(item[:type])
+        class_name.new(item)
+      end
     end
   end
 end
