@@ -9,6 +9,34 @@ module BoardGameGeek
         process_item_data(item_data)
       end
 
+      class << self
+        def text_attribute(name, opts = {})
+          create_attribute(name, opts) { |attribute| attribute.text_value }
+        end
+
+        def value_attribute(name, opts = {})
+          create_attribute(name, opts) { |attribute| attribute.value }
+        end
+
+        private
+
+        def create_attribute(name, opts = {}, &blk)
+          property_name = opts[:name] || name
+
+          self.send :attr_reader, property_name
+          self.send :define_method, "set_#{name}" do |attribute|
+            property_value = blk.call(attribute)
+
+            case opts[:type]
+            when :int, :integer
+              property_value = property_value.to_i
+            end
+
+            self.instance_variable_set("@#{property_name}", property_value)
+          end
+        end
+      end
+
       private
 
       def process_item_data(item_data)
